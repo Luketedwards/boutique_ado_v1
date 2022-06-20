@@ -1,0 +1,5 @@
+WARNING:pygls.protocol:Cancel notification for unknown message id "4"
+WARNING:pygls.protocol:Cancel notification for unknown message id "67"
+WARNING:pygls.protocol:Cancel notification for unknown message id "127"
+WARNING:pygls.protocol:Cancel notification for unknown message id "170"
+WARNING:pygls.protocol:Cancel notification for unknown message id "218"

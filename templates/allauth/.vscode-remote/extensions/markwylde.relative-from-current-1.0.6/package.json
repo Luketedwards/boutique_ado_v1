@@ -1,0 +1,69 @@
+{
+	"name": "relative-from-current",
+	"displayName": "relative-from-current",
+	"publisher": "markwylde",
+	"description": "Insert the relative path from the current open file",
+	"version": "1.0.6",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/markwylde/vscode-relative-from-current.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:relative-from-current.insertRelativePath",
+		"onCommand:relative-from-current.copyRelativePath"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "relative-from-current.insertRelativePath",
+				"title": "Relative From Active File - Insert"
+			},
+			{
+				"command": "relative-from-current.copyRelativePath",
+				"title": "Relative From Active File - Copy"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "!explorerResourceIsFolder",
+					"command": "relative-from-current.insertRelativePath"
+				},
+				{
+					"when": "!explorerResourceIsFolder",
+					"command": "relative-from-current.copyRelativePath"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"vscode-test": "^1.5.0"
+	},
+	"icon": "icon.png",
+	"license": "MIT",
+	"__metadata": {
+		"id": "b6b7bf91-1ce0-47a7-9acc-1f9a41259fe7",
+		"publisherId": "dbf5fce5-e38a-43db-9ad7-c69b91fb6876",
+		"publisherDisplayName": null,
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1655724145563
+	}
+}

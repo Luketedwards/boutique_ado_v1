@@ -1,0 +1,735 @@
+LSP Notebooks experiment is disabled -- not using Pylance
+> conda info --json
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/interpreterInfo.py
+> /bin/python2 /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/interpreterInfo.py
+> /bin/python3 /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/interpreterInfo.py
+> /usr/bin/python2 /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/interpreterInfo.py
+Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+Starting Jedi language server for boutique_ado_v1.
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+23,80,E,E501:line too long (81 > 79 characters)
+89,80,E,E501:line too long (91 > 79 characters)
+92,80,E,E501:line too long (81 > 79 characters)
+95,80,E,E501:line too long (82 > 79 characters)
+98,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+89,80,E,E501:line too long (91 > 79 characters)
+92,80,E,E501:line too long (81 > 79 characters)
+95,80,E,E501:line too long (82 > 79 characters)
+98,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+62,62,E,E261:at least two spaces before inline comment
+62,80,E,E501:line too long (83 > 79 characters)
+89,80,E,E501:line too long (91 > 79 characters)
+92,80,E,E501:line too long (81 > 79 characters)
+95,80,E,E501:line too long (82 > 79 characters)
+98,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+73,5,E,E999:SyntaxError: invalid syntax
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "error",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 73,
+        "column": 5,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "syntax-error",
+        "message": "invalid syntax (<unknown>, line 73)",
+        "message-id": "E0001"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+62,62,E,E261:at least two spaces before inline comment
+62,80,E,E501:line too long (83 > 79 characters)
+71,1,W,W293:blank line contains whitespace
+77,1,W,W293:blank line contains whitespace
+99,80,E,E501:line too long (91 > 79 characters)
+102,80,E,E501:line too long (81 > 79 characters)
+105,80,E,E501:line too long (82 > 79 characters)
+108,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 71,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 77,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+65,62,E,E261:at least two spaces before inline comment
+65,80,E,E501:line too long (83 > 79 characters)
+74,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+102,80,E,E501:line too long (91 > 79 characters)
+105,80,E,E501:line too long (81 > 79 characters)
+108,80,E,E501:line too long (82 > 79 characters)
+111,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 74,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 80,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+65,62,E,E261:at least two spaces before inline comment
+65,80,E,E501:line too long (83 > 79 characters)
+74,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+104,80,E,E501:line too long (91 > 79 characters)
+107,80,E,E501:line too long (81 > 79 characters)
+110,80,E,E501:line too long (82 > 79 characters)
+113,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 74,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 80,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/urls.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/urls.py
+cwd: .
+##########Linting Output - flake8##########
+
+
+##########Linting Output - pylint##########
+
+[]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/urls.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/urls.py
+cwd: .
+##########Linting Output - flake8##########
+
+21,22,F,F821:undefined name 'include'
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "error",
+        "module": "boutique_ado.urls",
+        "obj": "",
+        "line": 21,
+        "column": 21,
+        "endLine": 21,
+        "endColumn": 28,
+        "path": "boutique_ado/urls.py",
+        "symbol": "undefined-variable",
+        "message": "Undefined variable 'include'",
+        "message-id": "E0602"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/urls.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/urls.py
+cwd: .
+##########Linting Output - flake8##########
+
+
+##########Linting Output - pylint##########
+
+[]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+64,62,E,E261:at least two spaces before inline comment
+64,80,E,E501:line too long (83 > 79 characters)
+73,1,W,W293:blank line contains whitespace
+79,1,W,W293:blank line contains whitespace
+103,80,E,E501:line too long (91 > 79 characters)
+106,80,E,E501:line too long (81 > 79 characters)
+109,80,E,E501:line too long (82 > 79 characters)
+112,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 73,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 79,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+63,62,E,E261:at least two spaces before inline comment
+63,80,E,E501:line too long (83 > 79 characters)
+72,1,W,W293:blank line contains whitespace
+78,1,W,W293:blank line contains whitespace
+102,80,E,E501:line too long (91 > 79 characters)
+105,80,E,E501:line too long (81 > 79 characters)
+108,80,E,E501:line too long (82 > 79 characters)
+111,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 72,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 78,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+66,62,E,E261:at least two spaces before inline comment
+66,80,E,E501:line too long (83 > 79 characters)
+75,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+105,80,E,E501:line too long (91 > 79 characters)
+108,80,E,E501:line too long (81 > 79 characters)
+111,80,E,E501:line too long (82 > 79 characters)
+114,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 75,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 81,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/urls.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/urls.py
+cwd: .
+##########Linting Output - flake8##########
+
+
+##########Linting Output - pylint##########
+
+[]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+66,62,E,E261:at least two spaces before inline comment
+66,80,E,E501:line too long (83 > 79 characters)
+75,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+116,80,E,E501:line too long (91 > 79 characters)
+119,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (82 > 79 characters)
+125,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 75,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 81,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/urls.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/urls.py
+cwd: .
+Starting Jedi language server for boutique_ado_v1.
+##########Linting Output - flake8##########
+
+
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+66,62,E,E261:at least two spaces before inline comment
+66,80,E,E501:line too long (83 > 79 characters)
+75,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+116,80,E,E501:line too long (91 > 79 characters)
+119,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (82 > 79 characters)
+125,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[]
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 75,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 81,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -p flake8 ~/.pyenv/shims/flake8 ./boutique_ado/settings.py
+cwd: .
+> ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2022.8.0/pythonFiles/linter.py -m pylint ./boutique_ado/settings.py
+cwd: .
+##########Linting Output - flake8##########
+
+14,1,F,F401:'os' imported but unused
+23,80,E,E501:line too long (81 > 79 characters)
+66,62,E,E261:at least two spaces before inline comment
+66,80,E,E501:line too long (83 > 79 characters)
+75,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+116,80,E,E501:line too long (91 > 79 characters)
+119,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (82 > 79 characters)
+125,80,E,E501:line too long (83 > 79 characters)
+
+##########Linting Output - pylint##########
+
+[
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 75,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "convention",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 81,
+        "column": 0,
+        "endLine": null,
+        "endColumn": null,
+        "path": "boutique_ado/settings.py",
+        "symbol": "trailing-whitespace",
+        "message": "Trailing whitespace",
+        "message-id": "C0303"
+    },
+    {
+        "type": "warning",
+        "module": "boutique_ado.settings",
+        "obj": "",
+        "line": 14,
+        "column": 0,
+        "endLine": 14,
+        "endColumn": 9,
+        "path": "boutique_ado/settings.py",
+        "symbol": "unused-import",
+        "message": "Unused import os",
+        "message-id": "W0611"
+    }
+]
+
